@@ -1,0 +1,121 @@
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'poppins';
+    font-size: 15px;
+}
+body {
+    padding: 4em 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+main {
+    max-width: 310px;
+}
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9rem;
+}
+#header {
+    padding-bottom: 3em;
+}
+#header p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+h1 {
+    font-size: 1.4rem;
+    padding: 0.1em 0 0.5em;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.box{
+    max-width: 310px;
+    text-align: left;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1);
+}
+#image {
+    display: flex;
+    justify-content: end;
+}
+#team-karma {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.box1{
+    border-top: solid hsl(180, 62%, 55%);
+}
+.box2{
+    border-top: solid hsl(0, 78%, 62%);
+}
+.box3{
+    border-top: solid hsl(34, 97%, 64%);
+}
+.box4{
+    border-top: solid hsl(212, 86%, 64%);
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    body {
+        padding: 2em ;
+    }
+    main {
+        min-width: 750px;
+    }
+    #header {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+    #team-karma {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+@media (min-width: 1024px) {
+    main {
+        min-width: 1100px;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    #team-karma {
+        flex-direction: column;
+    }
+}
